@@ -1,7 +1,8 @@
-chrome.browserAction.onClicked.addListener(function(theCurrentTab) {
-    chrome.tabs.query({}, function(allTabsThatAreOpen) {
-        for (let oneOfTheTabsThatIsOpen of allTabsThatAreOpen) {
-            if (oneOfTheTabsThatIsOpen.id !== theCurrentTab.id && oneOfTheTabsThatIsOpen.pinned === false) chrome.tabs.remove(oneOfTheTabsThatIsOpen.id);
+chrome.action.onClicked.addListener(async (tab) => {
+    let allTabs = await chrome.tabs.query({});
+    for (let t of allTabs) {
+        if (t.id !== tab.id && !t.pinned) {
+            chrome.tabs.remove(t.id);
         }
-    })
+    }
 });
