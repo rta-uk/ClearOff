@@ -1,14 +1,11 @@
 {
   "manifest_version": 3,
   "name": "Clear Off",
-  "version": "1.0",
+  "version": "3.0",
   "description": "Group all tabs except the current one and Google Meet tabs",
+  "author": "rallan@anthropic.com",
   "permissions": [
-    "tabs",
-    "tabGroups"
-  ],
-  "host_permissions": [
-    "<all_urls>"
+    "tabs"
   ],
   "action": {
     "default_title": "Clear Off"
