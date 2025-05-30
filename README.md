@@ -3,19 +3,20 @@
 **Clear Off** is a simple Chrome extension that closes all open tabs except:
 - The currently active tab
 - Any pinned tabs
+- Any tabs with URL meet.google.com
 
 This helps you quickly declutter your browser and focus on what matters.
 
 ---
 
-## 🔄 What's New in v2.0.0
+## 🔄 What's New in v3.0.0
 
 This version includes a major update:
 
 - ✅ Upgraded to **Manifest V3** (required by modern versions of Chrome)
 - ✅ Uses new `chrome.action` API instead of deprecated `browserAction`
 - ✅ Improved compatibility and future-proofing
-- ✅ Behavior remains the same: closes all unpinned, inactive tabs with a single click
+- ✅ Google Meet tabs are kept open
 
 > ⚠️ Note: Manifest V2 is no longer supported in recent Chrome versions. This update ensures continued compatibility.
 

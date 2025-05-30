@@ -1,16 +1,19 @@
 {
-    "name": "Clear Off",
-    "description": "Close all open tabs except pinned ones",
-    "version": "2",
-    "manifest_version": 3,
-    "action": {},
-    "background": {
-        "service_worker": "background.js"
-    },
-    "permissions": [
-        "tabs"
-    ],
-    "host_permissions": [
-        "<all_urls>"
-    ]
+  "manifest_version": 3,
+  "name": "Clear Off",
+  "version": "1.0",
+  "description": "Group all tabs except the current one and Google Meet tabs",
+  "permissions": [
+    "tabs",
+    "tabGroups"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "action": {
+    "default_title": "Clear Off"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
 }
