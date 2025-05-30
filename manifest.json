@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Clear Off",
   "version": "3.0",
-  "description": "Group all tabs except the current one and Google Meet tabs",
+  "description": "Closes all tabs except the current one and Google Meet tabs",
   "author": "rallan@anthropic.com",
   "permissions": [
     "tabs"
